@@ -20,12 +20,14 @@ Desafio 3
 
 A) 2 exemplos de código que reflitam facilidade de escrita e legibilidade:
 
+```php
 <?php
 $var1 = 'var2';      //Estamos atribuindo o 'var2' a variavel $var1
 ${$var1} = 1234;     //ele atribui o valor 1234 a variavel $var2
 echo $var2;          //mostra na tela o conteudo da variavel $var2
 ?>                   //*tambem refletimos a questao da facilidade de escrita, sendo
                      //que precisamos colocar "$" para declarar e chamar alguma variavel
+```
 
 B) Elaborar a representação em BNF ou EBFN de uma estrutura da linguagem:
 
