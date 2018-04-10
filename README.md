@@ -49,10 +49,10 @@ class_entry_type = [ "abstract" | "final" ] "class" ;
 
 ## Desafio 4
 
-### A) Avaliem 5 regras semânticas da linguagem com base critérios de avaliação das linguagens.
+### A) Avaliem 5 regras semânticas da linguagem com base critérios de avaliação das linguagens:
 
-### B) Avaliem os tipos de dados da linguagem.
+### B) Avaliem os tipos de dados da linguagem:
 
-### C) Avaliem como é a vinculação do tipos de dados da linguagem.
+### C) Avaliem como é a vinculação do tipos de dados da linguagem:
 
-### D) Avaliem como é a compatibilidade e conversão dos tipos de dados da linguagem. 
+### D) Avaliem como é a compatibilidade e conversão dos tipos de dados da linguagem:
