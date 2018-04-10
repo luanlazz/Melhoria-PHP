@@ -45,6 +45,14 @@ class_entry_type = [ "abstract" | "final" ] "class" ;
 ``` 
 
 ### C) Identificar como é o gerenciamento de memoria da linguagem e descreva as vantagens e desvantagens:
-##### Como o PHP é uma linguagem de script e é compilada em tempo de execução, pode acontecer de o compilador não identificar possiveis problemas de memória, portanto o PHP possui um Garbage Collector.
-##### O PHP gerencia as referências de todas as declarações, garantindo que só existam as necessárias e removendo o que não é usado. 
-##### A vantagem ocorre em scripts de longa duração e uso excessivo de memória, onde o GC vai remover o 'lixo' da memória. A desvantagem ocorre em scripts pequenos ou de baixa duração, causando um overhead na execução, prejudicando um pouco. (mas conforme a documentação da linguagem, o overhead é bem baixo).
+##### Como o PHP é uma linguagem de script e é compilada em tempo de execução, pode acontecer de o compilador não identificar possiveis problemas de memória, portanto o PHP possui um Garbage Collector. O PHP gerencia as referências de todas as declarações, garantindo que só existam as necessárias e removendo o que não é usado. A vantagem ocorre em scripts de longa duração e uso excessivo de memória, onde o GC vai remover o 'lixo' da memória. A desvantagem ocorre em scripts pequenos ou de baixa duração, causando um overhead na execução, prejudicando um pouco. (mas conforme a documentação da linguagem, o overhead é bem baixo).
+
+## Desafio 4
+
+### Avaliem 5 regras semânticas da linguagem com base critérios de avaliação das linguagens.
+
+### Avaliem os tipos de dados da linguagem.
+
+### Avaliem como é a vinculação do tipos de dados da linguagem.
+
+### Avaliem como é a compatibilidade e conversão dos tipos de dados da linguagem. 
