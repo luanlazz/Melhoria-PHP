@@ -51,7 +51,7 @@ class_entry_type = [ "abstract" | "final" ] "class" ;
 
 ### A) Avaliem 5 regras semânticas da linguagem com base critérios de avaliação das linguagens:
 ```php
-$a = 1
+$a = 1         //variavel a recebe valor informado
 ```
 
 ```php
