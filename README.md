@@ -50,9 +50,42 @@ class_entry_type = [ "abstract" | "final" ] "class" ;
 ## Desafio 4
 
 ### A) Avaliem 5 regras semânticas da linguagem com base critérios de avaliação das linguagens:
+```php
+$a = 1
+```
+
+```php
+$c = $a * $b;
+```
+
+```php
+if($idade < 18) {
+    echo 'Você não pode entrar aqui!';
+} else {
+    echo 'Seja bem – vindo';
+}
+```
+
+```php
+while($num < 10 ) {
+    echo $num++;
+  }
+```
+
+```php 
+for($a = 1; $a <= 10; $a++){
+  $cubo = $a * $a * $a;
+  echo "O cubo de $a é $cubo<br />";
+}
+```
 
 ### B) Avaliem os tipos de dados da linguagem:
+#### O PHP é muito parecido com as outras linguagens neste aspecto. Temos os seguintes tipos de dados: numerico, booleano, string, array, objeto, recurso, misto, callback e null. A maioria das linguagens tem esses tipos de dados, porém um ponto em que o PHP é diferente, é a questão de que não precisa declara qual o tipo da variavel, você simplesmente declara uma variavel e atribui a ela o valor que desejar.
 
 ### C) Avaliem como é a vinculação do tipos de dados da linguagem:
 
+
 ### D) Avaliem como é a compatibilidade e conversão dos tipos de dados da linguagem:
+#### No PHP é possivel converter os dados de um tipo para outro. Porém existem algumas regras e restricões, por exemplo conversão de string para inteiro, só será convertido caso o número esteja na primeira possicão da string, caso contrario ele converte para 0. Na maioria dos casos, ocorre a conversão automatica de tipos de dados, como por exemplo, caso você tenha uma variavel do tipo int e outra float, quando for feita uma adicão entre elas o resultado será do tipo float.
+
+
