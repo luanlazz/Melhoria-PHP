@@ -51,30 +51,30 @@ class_entry_type = [ "abstract" | "final" ] "class" ;
 
 ### A) Avaliem 5 regras semânticas da linguagem com base critérios de avaliação das linguagens:
 ```php
-$a = 1         //variavel a recebe valor informado
+$a = 1               //Variavel a recebe valor declarado
 ```
 
 ```php
-$c = $a * $b;
+$c = $a * $b;        //Variavel c recebe multiplicação entre a variavel a e b
 ```
 
 ```php
-if($idade < 18) {
-    echo 'Você não pode entrar aqui!';
-} else {
-    echo 'Seja bem – vindo';
-}
+if($idade < 18) {                        //Se a condição entre parenteses for verdadeira 
+    echo 'Você não pode entrar aqui!';   //executa o trecho de código entre as chaves
+} else {                                 //Se a condição não for verdadeira então
+    echo 'Seja bem – vindo';             //executa este trecho de código entre as chaves
+} 
 ```
 
-```php
-while($num < 10 ) {
-    echo $num++;
+```php                         
+while($num < 10 ) {               //Enquanto a condição for verdadeira
+    echo $num++;                  //executa o trecho de código entre as chaves
   }
 ```
 
 ```php 
-for($a = 1; $a <= 10; $a++){
-  $cubo = $a * $a * $a;
+for($a = 1; $a <= 10; $a++){         //Inicializa a variavel de controle, executa o laço de repetição enquanto a condição for 
+  $cubo = $a * $a * $a;              //verdadeira, manipula a variavel de controle e executa o trecho de código entre chaves
   echo "O cubo de $a é $cubo<br />";
 }
 ```
@@ -83,6 +83,8 @@ for($a = 1; $a <= 10; $a++){
 ##### O PHP é muito parecido com as outras linguagens neste aspecto. Temos os seguintes tipos de dados: numerico, booleano, string, array, objeto, recurso, misto, callback e null. A maioria das linguagens tem esses tipos de dados, porém um ponto em que o PHP é diferente, é a questão de que não precisa declara qual o tipo da variavel, você simplesmente declara uma variavel e atribui a ela o valor que desejar.
 
 ### C) Avaliem como é a vinculação do tipos de dados da linguagem:
+##### A vinculação dos tipos de dados no PHP é dinâmica, ou seja, ela é somente verificada em tempo de execução, o que torna a execução mais lenta, mas também promove uma flexibilidade maior ao programar. Assim, na linguagem PHP não se é necessário definir o tipo a ser declarado, mas sim somente atribuí-lo um nome e um valor.
+##### Os tipos de dados dinâmicos são um dos motivos pelos quais o PHP tem sua execução mais lenta, porém é  compensado com a simplicidade de código e fácil visualização do resultado do mesmo por uma aba de um browser qualquer.
 
 
 ### D) Avaliem como é a compatibilidade e conversão dos tipos de dados da linguagem:
