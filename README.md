@@ -35,8 +35,9 @@ Ao conversarmos, percebemos que ao trabalhar com a linguagem PHP, algumas limita
 $var1 = 'var2';      //Estamos atribuindo o 'var2' a variavel $var1
 ${$var1} = 1234;     //ele atribui o valor 1234 a variavel $var2
 echo $var2;          //mostra na tela o conteudo da variavel $var2
-?>                   //Tambem refletimos a questao da facilidade de escrita, sendo
+                     //Tambem refletimos a questao da facilidade de escrita, sendo
                      //que precisamos colocar "$" para declarar e chamar qualquer variavel
+?>
 ```
 
 2. **Elaborar a representação em BNF ou EBFN de uma estrutura da linguagem:**
@@ -100,4 +101,88 @@ for($a = 1; $a <= 10; $a++){         //Inicializa a variavel de controle, ex
 
 	No PHP é possivel converter os dados de um tipo para outro. Porém existem algumas regras e restricões, por exemplo conversão de string para inteiro, só será convertido caso o número esteja na primeira possicão da string, caso contrario ele converte para 0. Na maioria dos casos, ocorre a conversão automatica de tipos de dados, como por exemplo, caso você tenha uma variavel do tipo int e outra float, quando for feita uma adicão entre elas o resultado será do tipo float.
 
+## Desafio 5
 
+1. **Identifique as categorias de controle de fluxo utilizados na linguagem e apresente exemplos.**
+
+Segundo a documentação oficial do [PHP](https://secure.php.net/manual/en/language.control-structures.php), existem estas estruturas de controle na linguagem:
+
+#### Seleção
+
+* if
+* else
+* elseif/else if
+* goto
+* switch
+
+```php
+<?php
+// if/else
+if ($a > $b) {
+  echo "a is greater than b";
+} else {
+  echo "a is NOT greater than b";
+}
+
+// goto
+goto a;
+echo 'Foo';
+ 
+a:
+echo 'Bar';
+```
+
+#### Iteração
+
+* while
+* do-while
+* for
+* foreach
+* break
+* continue
+
+```php
+<?php
+// while
+while ($i <= 10) {
+    echo $i++;  
+}
+```
+
+#### Abstração procedural
+
+* require
+* include
+* require_once
+* include_once
+* return
+
+```php
+<?php
+require('somefile.php');
+?>
+```
+
+#### Manipulação/tratamento de exceção e especulação, 
+
+* try/catch (não está na documentação, mas possui na linguagem).
+
+Exemplos:
+
+```php
+<?php
+try {
+    echo inverse(5) . "\n";
+    echo inverse(0) . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
+```
+
+2. **Identifique quais as formas de abstração de controle e abstração de dados utilizados na linguagem e apresente exemplos.**
+
+TODO
+
+3. **Identifique qual o paradigma da linguagem.**
+
+TODO
