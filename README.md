@@ -2,28 +2,33 @@
 
 ## Desafio 1 
 
-##### Ao conversarmos, percebemos que ao trabalhar com a linguagem PHP, algumas limitações de legibilidade ficam bem claras; já existem várias ideias novas sendo trabalhadas pelos próprios usuários de PHP. Algumas dessas ideias remetem à legibilidade e, consequentemente, à confiabilidade da linguagem, já que existem certos problemas ao programar com PHP que vemos que poderia ser melhorado, como a ideia do 'type hint' que foi recentemente implementado, até a imutabilidade de objetos e propriedades. Vamos assim explorar estas falhas e construir um projeto de otimização da linguagem.
+Ao conversarmos, percebemos que ao trabalhar com a linguagem PHP, algumas limitações de legibilidade ficam bem claras; já existem várias ideias novas sendo trabalhadas pelos próprios usuários de PHP. Algumas dessas ideias remetem à legibilidade e, consequentemente, à confiabilidade da linguagem, já que existem certos problemas ao programar com PHP que vemos que poderia ser melhorado, como a ideia do 'type hint' que foi recentemente implementado, até a imutabilidade de objetos e propriedades. Vamos assim explorar estas falhas e construir um projeto de otimização da linguagem.
 
 ## Desafio 2
 
-### A) Domínio da linguagem:
-##### PHP se define como uma linguagem imperativa baseada em execuções por scripting, ou seja, programas escritos para uma execução automatizada, que será interpretada por esse sistema. Diz-se imperativa por ser formada por comandos e instruções diretas, o que torna a linguagem bem pragmática.
+1. **Domínio da linguagem:**
 
-### B) Aspectos importantes para a linguagem e possiveis Trade-Offs:
-##### A linguagem, que hoje é uma das mais populares pra web, considera e muito seu código simples e sua geração de resultado dinâmico em HTML, o que traz uma facilidade maior ao ter noção do resultado de sua programação. Se é considerada também sua velocidade e portabilidade.
+	PHP se define como uma linguagem imperativa baseada em execuções por scripting, ou seja, programas escritos para uma execução automatizada, que será interpretada por esse sistema. Diz-se imperativa por ser formada por comandos e instruções diretas, o que torna a linguagem bem pragmática.
 
-### C) Qual a influencia do projeto da linguaguem: 
-##### PHP é uma linguagem que foi projetada inicialmente para ser um script do lado do servidor. Foi escrita majoritariamente em C. Mas suas influências são: Perl, C, C++, Java, Tcl  
+2. **Aspectos importantes para a linguagem e possiveis Trade-Offs:**
 
-### D) Metodo de implementacao da linguagem:
-##### Em atualizacoes recentes o PHP passou de um linguagem interpretada, para uma execucao híbrido, ou seja ele compila o código para linguagem de maquina atravez de um interpretador.
+	A linguagem, que hoje é uma das mais populares pra web, considera e muito seu código simples e sua geração de resultado dinâmico em HTML, o que traz uma facilidade maior ao ter noção do resultado de sua programação. Se é considerada também sua velocidade e portabilidade.
 
-### E) Ambiente de programacao:
-##### O ambiente de programacao do php é composto de um servidor, interpretador da linguagem e um banco de dados (opcional). A instalacao desse ambiente pode ser feita manualmente, instalando componente por componente, ou atravez de um instalador que faz todo esse processo.
+3. **Qual a influencia do projeto da linguaguem:**
+
+	PHP é uma linguagem que foi projetada inicialmente para ser um script do lado do servidor. Foi escrita majoritariamente em C. Mas suas influências são: Perl, C, C++, Java, Tcl  
+
+4. **Metodo de implementacao da linguagem:**
+
+	Em atualizacoes recentes o PHP passou de um linguagem interpretada, para uma execucao híbrido, ou seja ele compila o código para linguagem de maquina atravez de um interpretador.
+
+5. **Ambiente de programacao:**
+
+	O ambiente de programacao do php é composto de um servidor, interpretador da linguagem e um banco de dados (opcional). A instalacao desse ambiente pode ser feita manualmente, instalando componente por componente, ou atravez de um instalador que faz todo esse processo.
 
 ## Desafio 3
 
-### A) 2 exemplos de código que reflitam facilidade de escrita e legibilidade:
+1. **2 exemplos de código que reflitam facilidade de escrita e legibilidade:**
 
 ```php
 <?php
@@ -34,7 +39,7 @@ echo $var2;          //mostra na tela o conteudo da variavel $var2
                      //que precisamos colocar "$" para declarar e chamar qualquer variavel
 ```
 
-### B) Elaborar a representação em BNF ou EBFN de uma estrutura da linguagem:
+2. **Elaborar a representação em BNF ou EBFN de uma estrutura da linguagem:**
 
 ```
 class_declaration_statement = class_entry_type T_STRING
@@ -44,12 +49,14 @@ class_declaration_statement = class_entry_type T_STRING
 class_entry_type = [ "abstract" | "final" ] "class" ;
 ``` 
 
-### C) Identificar como é o gerenciamento de memoria da linguagem e descreva as vantagens e desvantagens:
-##### Como o PHP é uma linguagem de script e é compilada em tempo de execução, pode acontecer de o compilador não identificar possiveis problemas de memória, portanto o PHP possui um Garbage Collector. O PHP gerencia as referências de todas as declarações, garantindo que só existam as necessárias e removendo o que não é usado. A vantagem ocorre em scripts de longa duração e uso excessivo de memória, onde o GC vai remover o 'lixo' da memória. A desvantagem ocorre em scripts pequenos ou de baixa duração, causando um overhead na execução, prejudicando um pouco. (mas conforme a documentação da linguagem, o overhead é bem baixo).
+3. **Identificar como é o gerenciamento de memoria da linguagem e descreva as vantagens e desvantagens:**
+
+	Como o PHP é uma linguagem de script e é compilada em tempo de execução, pode acontecer de o compilador não identificar possiveis problemas de memória, portanto o PHP possui um Garbage Collector. O PHP gerencia as referências de todas as declarações, garantindo que só existam as necessárias e removendo o que não é usado. A vantagem ocorre em scripts de longa duração e uso excessivo de memória, onde o GC vai remover o 'lixo' da memória. A desvantagem ocorre em scripts pequenos ou de baixa duração, causando um overhead na execução, prejudicando um pouco. (mas conforme a documentação da linguagem, o overhead é bem baixo).
 
 ## Desafio 4
 
-### A) Avaliem 5 regras semânticas da linguagem com base critérios de avaliação das linguagens:
+1. Avaliem 5 regras semânticas da linguagem com base critérios de avaliação das linguagens:
+
 ```php
 $a = 1               //Variavel a recebe valor declarado
 ```
@@ -79,15 +86,18 @@ for($a = 1; $a <= 10; $a++){         //Inicializa a variavel de controle, ex
 }
 ```
 
-### B) Avaliem os tipos de dados da linguagem:
-##### O PHP é muito parecido com as outras linguagens neste aspecto. Temos os seguintes tipos de dados: numerico, booleano, string, array, objeto, recurso, misto, callback e null. A maioria das linguagens tem esses tipos de dados, porém um ponto em que o PHP é diferente, é a questão de que não precisa declara qual o tipo da variavel, você simplesmente declara uma variavel e atribui a ela o valor que desejar.
+2. **Avaliem os tipos de dados da linguagem:**
 
-### C) Avaliem como é a vinculação do tipos de dados da linguagem:
-##### A vinculação dos tipos de dados no PHP é dinâmica, ou seja, ela é somente verificada em tempo de execução, o que torna a execução mais lenta, mas também promove uma flexibilidade maior ao programar. Assim, na linguagem PHP não se é necessário definir o tipo a ser declarado, mas sim somente atribuí-lo um nome e um valor.
-##### Os tipos de dados dinâmicos são um dos motivos pelos quais o PHP tem sua execução mais lenta, porém é  compensado com a simplicidade de código e fácil visualização do resultado do mesmo por uma aba de um browser qualquer.
+	O PHP é muito parecido com as outras linguagens neste aspecto. Temos os seguintes tipos de dados: numerico, booleano, string, array, objeto, recurso, misto, callback e null. A maioria das linguagens tem esses tipos de dados, porém um ponto em que o PHP é diferente, é a questão de que não precisa declara qual o tipo da variavel, você simplesmente declara uma variavel e atribui a ela o valor que desejar.
+
+3. **Avaliem como é a vinculação do tipos de dados da linguagem:**
+
+	A vinculação dos tipos de dados no PHP é dinâmica, ou seja, ela é somente verificada em tempo de execução, o que torna a execução mais lenta, mas também promove uma flexibilidade maior ao programar. Assim, na linguagem PHP não se é necessário definir o tipo a ser declarado, mas sim somente atribuí-lo um nome e um valor.
+	Os tipos de dados dinâmicos são um dos motivos pelos quais o PHP tem sua execução mais lenta, porém é  compensado com a simplicidade de código e fácil visualização do resultado do mesmo por uma aba de um browser qualquer.
 
 
-### D) Avaliem como é a compatibilidade e conversão dos tipos de dados da linguagem:
-##### No PHP é possivel converter os dados de um tipo para outro. Porém existem algumas regras e restricões, por exemplo conversão de string para inteiro, só será convertido caso o número esteja na primeira possicão da string, caso contrario ele converte para 0. Na maioria dos casos, ocorre a conversão automatica de tipos de dados, como por exemplo, caso você tenha uma variavel do tipo int e outra float, quando for feita uma adicão entre elas o resultado será do tipo float.
+4. **Avaliem como é a compatibilidade e conversão dos tipos de dados da linguagem:**
+
+	No PHP é possivel converter os dados de um tipo para outro. Porém existem algumas regras e restricões, por exemplo conversão de string para inteiro, só será convertido caso o número esteja na primeira possicão da string, caso contrario ele converte para 0. Na maioria dos casos, ocorre a conversão automatica de tipos de dados, como por exemplo, caso você tenha uma variavel do tipo int e outra float, quando for feita uma adicão entre elas o resultado será do tipo float.
 
 
