@@ -56,7 +56,7 @@ class_entry_type = [ "abstract" | "final" ] "class" ;
 
 ## Desafio 4
 
-1. Avaliem 5 regras semânticas da linguagem com base critérios de avaliação das linguagens:
+1. Avaliem 5 regras semânticas da linguagem com base em critérios de avaliação das linguagens:
 
 ```php
 $a = 1               //Variavel a recebe valor declarado
