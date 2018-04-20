@@ -212,7 +212,9 @@ arquivo3:
 <?php
 namespace animate;
   class Animal {
-    static function breathes() {echo 'air';}  } ?>
+    static function breathes() {echo 'air';}
+}
+?>
 ```
 
 arquivo4:
