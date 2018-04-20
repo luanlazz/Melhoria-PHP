@@ -185,4 +185,4 @@ TODO
 
 3. **Identifique qual o paradigma da linguagem.**
 
-TODO
+O PHP é considerado como procedural, funcional e orientado a objetos. O início do suporte à orientação a objetos foi não versão 5.0, em 2004, e desde então vem evoluindo.
