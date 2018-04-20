@@ -10,21 +10,21 @@ Ao conversarmos, percebemos que ao trabalhar com a linguagem PHP, algumas limita
 
 	PHP se define como uma linguagem imperativa baseada em execuções por scripting, ou seja, programas escritos para uma execução automatizada, que será interpretada por esse sistema. Diz-se imperativa por ser formada por comandos e instruções diretas, o que torna a linguagem bem pragmática.
 
-2. **Aspectos importantes para a linguagem e possiveis Trade-Offs:**
+2. **Aspectos importantes para a linguagem e possíveis Trade-Offs:**
 
-	A linguagem, que hoje é uma das mais populares pra web, considera e muito seu código simples e sua geração de resultado dinâmico em HTML, o que traz uma facilidade maior ao ter noção do resultado de sua programação. Se é considerada também sua velocidade e portabilidade.
+	A linguagem, que hoje é uma das mais populares pra web, considera e muito seu código simples e sua geração de resultado dinâmico em HTML, o que traz uma facilidade maior ao ter noção do resultado de sua programação. Sua velocidade e portabilidade também podem ser considerados.
 
-3. **Qual a influencia do projeto da linguaguem:**
+3. **Qual a influência do projeto da linguaguem:**
 
-	PHP é uma linguagem que foi projetada inicialmente para ser um script do lado do servidor. Foi escrita majoritariamente em C. Mas suas influências são: Perl, C, C++, Java, Tcl  
+	PHP é uma linguagem que foi projetada inicialmente para ser um script do lado do servidor. Foi escrita majoritariamente em C, mas suas influências são: Perl, C, C++, Java, Tcl  
 
-4. **Metodo de implementacao da linguagem:**
+4. **Método de implementação da linguagem:**
 
-	Em atualizacoes recentes o PHP passou de um linguagem interpretada, para uma execucao híbrido, ou seja ele compila o código para linguagem de maquina atravez de um interpretador.
+	Em atualizações recentes, o PHP passou de um linguagem interpretada para uma execução híbrida, ou seja, ele compila o código para linguagem de maquina através de um interpretador.
 
-5. **Ambiente de programacao:**
+5. **Ambiente de programação:**
 
-	O ambiente de programacao do php é composto de um servidor, interpretador da linguagem e um banco de dados (opcional). A instalacao desse ambiente pode ser feita manualmente, instalando componente por componente, ou atravez de um instalador que faz todo esse processo.
+	O ambiente de programação do PHP é composto de um servidor, interpretador da linguagem e um banco de dados (opcional). A instalação desse ambiente pode ser feita manualmente, instalando componente por componente, ou através de um instalador que faz todo esse processo.
 
 ## Desafio 3
 
