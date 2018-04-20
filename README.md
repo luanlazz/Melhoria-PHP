@@ -181,7 +181,69 @@ try {
 
 2. **Identifique quais as formas de abstração de controle e abstração de dados utilizados na linguagem e apresente exemplos.**
 
-TODO
+Funções, Classes, Herança, Polimorfismo, Encapsulamento (público, privado, protegido e namespaces), Classes Abstratas.
+
+Exemplos:
+
+*Utilização de namespaces (encapsulamento)*
+
+arquivo1:
+```php
+<?php
+namespace foo;
+  class Cat {
+    static function says() {echo 'meoow';}
+  }
+ ?>
+```
+
+arquivo2:
+```php
+<?php
+namespace bar;
+  class Dog {
+    static function says() {echo 'ruff';}
+  }
+?>
+```
+
+arquivo3:
+```php
+<?php
+namespace animate;
+  class Animal {
+    static function breathes() {echo 'air';}  } ?>
+```
+
+arquivo4:
+```php
+<?php
+namespace fub;
+  include 'file1.php';
+  include 'file2.php';
+  include 'file3.php';
+  use foo as feline;
+  use bar as canine;
+  use animate;
+  echo \feline\Cat::says(), "<br />\n";
+  echo \canine\Dog::says(), "<br />\n";
+  echo \animate\Animal::breathes(), "<br />\n";
+?>
+```
+
+*Utilização de array_map (função que abstrai uma iteração)*
+```php
+<?php
+function cube($n)
+{
+    return($n * $n * $n);
+}
+
+$a = array(1, 2, 3, 4, 5);
+$b = array_map("cube", $a);
+print_r($b);
+?>
+```
 
 3. **Identifique qual o paradigma da linguagem.**
 
